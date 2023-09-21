@@ -17,6 +17,8 @@ function ProductCard({
   rating,
   totalReviews,
   orderInSeconds,
+  price,
+  discountedPrice,
 }) {
   const isOutOfStock = stockPercent === 0;
   const featuredClass = isFeatured ? "featured" : "";
@@ -38,7 +40,7 @@ function ProductCard({
         <AdditionalActions />
       </div>
       <div className="sale-point">
-        <Price isFeatured={isFeatured} />
+        <Price price={price} discountedPrice={discountedPrice} />
         <StockLimit isLowStock={isLowStock} inStockPercent={stockPercent} />
         <SalePoints secondLeftNextDelivery={orderInSeconds} />
         <AddToBasketButton

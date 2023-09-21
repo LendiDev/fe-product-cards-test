@@ -1,14 +1,46 @@
 import React from "react";
 
-function Price({ isFeatured }) {
+function Price({ price, discountedPrice }) {
+  const priceFormatted = new Intl.NumberFormat("en-GB", {
+    style: "currency",
+    currency: "GBP",
+  }).format(discountedPrice || price);
+
+  let originalPriceFormatted;
+  if (price) {
+    originalPriceFormatted =
+      "RRP" +
+      new Intl.NumberFormat("en-GB", {
+        style: "currency",
+        currency: "GBP",
+      }).format(price);
+  }
+
+  let discount;
+  if (price - discountedPrice > 0) {
+    if (discountedPrice && price) {
+      discount =
+        "Save " +
+        new Intl.NumberFormat("en-GB", {
+          style: "currency",
+          currency: "GBP",
+        }).format(price - discountedPrice);
+    }
+  }
+
   return (
     <div className="product-price-container">
-      <p className="old-price">
-        <span className="strikethrough">RRP £1,799.00</span>
-      </p>
+      {discount && (
+        <p className="old-price">
+          <span className="strikethrough">{originalPriceFormatted}</span>
+        </p>
+      )}
+
       <div className="discounted-container">
-        <p className="new-price">£1,599.00</p>
-        {isFeatured && <p className="save-tag">Save £200</p>}
+        <p className={`new-price ${discount ? "discounted" : ""}`}>
+          {priceFormatted}
+        </p>
+        {discount && <p className="save-tag">{discount}</p>}
       </div>
     </div>
   );

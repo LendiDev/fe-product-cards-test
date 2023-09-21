@@ -10,6 +10,8 @@ const productsData = [
     rating: 5,
     totalReviews: 23,
     orderInSeconds: 6453,
+    price: 1699.99,
+    discountedPrice: 1599.99,
   },
   {
     id: "3fwekfok3f09k30fk30fk1",
@@ -19,6 +21,8 @@ const productsData = [
     rating: 4,
     totalReviews: 1,
     orderInSeconds: 32843,
+    price: 1599.99,
+    discountedPrice: 1599.99,
   },
 ];
 

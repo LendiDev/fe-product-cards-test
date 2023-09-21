@@ -187,7 +187,7 @@
   font-size: 1.875em;
 }
 
-.featured .product-price-container p.new-price {
+.product-price-container p.new-price.discounted {
   color: var(--color-destructive);
 }
 
