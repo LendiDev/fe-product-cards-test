@@ -4,7 +4,7 @@ import React from "react";
 function ShortDescription() {
   return (
     <div className="short-description">
-      <ol className="list-with-icons">
+      <ul className="list-with-icons">
         <li>
           <span className="bullet-point icon-bullet-point" />
           <p>Self-lit pixels</p>
@@ -25,7 +25,7 @@ function ShortDescription() {
           <span className="bullet-point icon-bullet-point" />
           <p>2 year warranty</p>
         </li>
-      </ol>
+      </ul>
     </div>
   );
 }

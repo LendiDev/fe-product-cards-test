@@ -26,9 +26,15 @@ function App() {
   return (
     <div className="App">
       <main>
-        {productsData.map((product) => (
-          <ProductCard key={product.id} {...product} />
-        ))}
+        <section>
+          <ol>
+            {productsData.map((product) => (
+              <li key={product.id}>
+                <ProductCard {...product} />
+              </li>
+            ))}
+          </ol>
+        </section>
       </main>
     </div>
   );

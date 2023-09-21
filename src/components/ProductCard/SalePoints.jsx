@@ -19,7 +19,7 @@ function SalePoints({ secondLeftNextDelivery = 3648 }) {
 
   return (
     <div className="sale-points-container">
-      <ol className="list-with-icons">
+      <ul className="list-with-icons">
         <li>
           <span className="bullet-point icon-van" />
           <p>
@@ -35,7 +35,7 @@ function SalePoints({ secondLeftNextDelivery = 3648 }) {
           <span className="bullet-point icon-bullet-point" />
           <p>PayPal credit available</p>
         </li>
-      </ol>
+      </ul>
     </div>
   );
 }
