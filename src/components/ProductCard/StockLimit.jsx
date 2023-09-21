@@ -2,7 +2,7 @@ import React from "react";
 
 function StockLimit({ isLowStock = false, inStockPercent = 100 }) {
   let stockText = isLowStock ? "Last few left" : "In stock";
-  const lowStockClass = isLowStock ? "lowstock" : undefined;
+  const lowStockClass = isLowStock ? "lowstock" : "";
   const lowStockStyle = {
     width: `${inStockPercent}%`,
   };

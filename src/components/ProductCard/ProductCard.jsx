@@ -19,7 +19,7 @@ function ProductCard({
   orderInSeconds,
 }) {
   const isOutOfStock = stockPercent === 0;
-  const featuredClass = isFeatured ? "featured" : undefined;
+  const featuredClass = isFeatured ? "featured" : "";
 
   const onAddToBasketHandler = () => {
     alert("Add To Basket has been called!");
