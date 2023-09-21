@@ -288,6 +288,7 @@
   .product-card {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: var(--space-10);
     gap: var(--space-10);
   }
 
