@@ -8,6 +8,7 @@ import SalePoints from "./SalePoints";
 import RecommendedBadge from "./RecommendedBadge";
 import Header from "./Header";
 import AddToBasketButton from "./AddToBasketButton";
+import AdditionalActions from "./AdditionalActions";
 
 function ProductCard({
   isFeatured,
@@ -15,6 +16,7 @@ function ProductCard({
   stockPercent,
   rating,
   totalReviews,
+  orderInSeconds,
 }) {
   const isOutOfStock = stockPercent === 0;
   const featuredClass = isFeatured ? "featured" : undefined;
@@ -26,17 +28,24 @@ function ProductCard({
   return (
     <article className={`product-card ${featuredClass}`}>
       {isFeatured && <RecommendedBadge />}
-      <Header title='LG OLED65BX6LB 65" 4K OLED Smart TV - A Energy Rated' />
-      <Reviews rating={rating} totalReviews={totalReviews} />
-      <PreviewThumbnail />
-      <ShortDescription />
-      <Price />
-      <StockLimit isLowStock={isLowStock} inStockPercent={stockPercent} />
-      <SalePoints />
-      <AddToBasketButton
-        action={onAddToBasketHandler}
-        isOutOfStock={isOutOfStock}
-      />
+      <div className="product-details">
+        <div className="product-card-header">
+          <Header title='LG OLED65BX6LB 65" 4K OLED Smart TV - A Energy Rated' />
+          <Reviews rating={rating} totalReviews={totalReviews} />
+        </div>
+        <PreviewThumbnail />
+        <ShortDescription />
+        <AdditionalActions />
+      </div>
+      <div className="sale-point">
+        <Price isFeatured={isFeatured} />
+        <StockLimit isLowStock={isLowStock} inStockPercent={stockPercent} />
+        <SalePoints secondLeftNextDelivery={orderInSeconds} />
+        <AddToBasketButton
+          action={onAddToBasketHandler}
+          isOutOfStock={isOutOfStock}
+        />
+      </div>
     </article>
   );
 }

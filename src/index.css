@@ -11,6 +11,7 @@ html {
 
   --color-green-300: rgba(39, 174, 96, 1);
 
+  --color-primary: rgba(153, 36, 120, 1);
   --color-destructive: rgba(237, 20, 61, 1);
   --color-destructive-bg: rgba(237, 20, 61, 0.2);
 
@@ -32,7 +33,7 @@ html {
   --gradient-cta-button: linear-gradient(
     135deg,
     rgba(230, 21, 119, 1),
-    rgba(153, 36, 120, 1) 60%
+    var(--color-primary) 60%
   );
   --gradient-card-featured-border: linear-gradient(
     90deg,

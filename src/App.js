@@ -9,6 +9,7 @@ const productsData = [
     isFeatured: true,
     rating: 5,
     totalReviews: 23,
+    orderInSeconds: 3546,
   },
   {
     id: "3fwekfok3f09k30fk30fk1",
@@ -17,6 +18,7 @@ const productsData = [
     isFeatured: false,
     rating: 4,
     totalReviews: 1,
+    orderInSeconds: 32843,
   },
 ];
 
