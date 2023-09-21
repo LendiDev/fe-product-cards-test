@@ -5,7 +5,7 @@ function AddToBasketButton({ action, isOutOfStock }) {
   const title = isOutOfStock ? "Out of stock" : "Add to basket";
 
   return (
-    <div style={{ marginTop: 10 }}>
+    <div style={{ marginTop: 16 }}>
       <Button
         disabled={isOutOfStock}
         icon={!isOutOfStock && "icon-cart"}

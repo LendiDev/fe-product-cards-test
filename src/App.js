@@ -5,11 +5,11 @@ const productsData = [
   {
     id: "3fwekfok3f09k30fk30fk0",
     isLowStock: true,
-    stockPercent: 22.5,
+    stockPercent: 50,
     isFeatured: true,
     rating: 5,
     totalReviews: 23,
-    orderInSeconds: 3546,
+    orderInSeconds: 6453,
   },
   {
     id: "3fwekfok3f09k30fk30fk1",
