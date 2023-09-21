@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fe-product-cards-test/static/css/main.783026f0.css",
-    "main.js": "/fe-product-cards-test/static/js/main.2fb883a4.js",
+    "main.js": "/fe-product-cards-test/static/js/main.dbc6ee64.js",
     "static/media/preview-thumbnail.png": "/fe-product-cards-test/static/media/preview-thumbnail.a620b103aae89f8754a6.png",
     "index.html": "/fe-product-cards-test/index.html",
     "main.783026f0.css.map": "/fe-product-cards-test/static/css/main.783026f0.css.map",
-    "main.2fb883a4.js.map": "/fe-product-cards-test/static/js/main.2fb883a4.js.map"
+    "main.dbc6ee64.js.map": "/fe-product-cards-test/static/js/main.dbc6ee64.js.map"
   },
   "entrypoints": [
     "static/css/main.783026f0.css",
-    "static/js/main.2fb883a4.js"
+    "static/js/main.dbc6ee64.js"
   ]
 }
