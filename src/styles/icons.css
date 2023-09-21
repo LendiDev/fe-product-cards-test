@@ -1,0 +1,21 @@
+.icon-bullet-point {
+  width: 1rem;
+  height: 1rem;
+  background: url(../assets/images/tick.png) no-repeat;
+  background-size: 0.8rem;
+}
+
+.icon-van {
+  background: url(../assets/images/van.png) no-repeat;
+  background-size: 1.25rem;
+}
+
+.icon-cart {
+  background: url(../assets/images/cart.png) no-repeat;
+  background-size: 1.15rem;
+}
+
+.icon-star {
+  background: url(../assets/images/star.png) no-repeat;
+  background-size: 1.35rem;
+}

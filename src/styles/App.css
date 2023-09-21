@@ -1,0 +1,197 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-xl);
+  padding: var(--space-10);
+  margin: 0 var(--space-10) var(--space-15) var(--space-10);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: var(--shadow-card-standart);
+}
+
+.product-card.featured {
+  padding: calc(var(--space-10) - 2px);
+  border: 2px solid transparent;
+  background: var(--gradient-card-featured-bg) padding-box,
+    var(--gradient-card-featured-border) border-box;
+  box-shadow: var(--shadow-card-featured);
+}
+
+.product-card h1 {
+  margin: 0;
+  padding-top: 0.4375rem;
+  font-size: 1.125rem;
+}
+
+/*
+  Recommended Badge Component Start
+*/
+.recommended-badge {
+  width: fit-content;
+  margin-top: calc(-1 * var(--space-10));
+  margin-bottom: var(--space-5);
+  padding: var(--space-3) var(--space-6);
+  border-bottom-left-radius: var(--border-radius-xs);
+  border-bottom-right-radius: var(--border-radius-xs);
+  background: var(--gradient-card-featured-border);
+}
+
+.recommended-badge p {
+  font-weight: 700;
+  color: white;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+/*
+  Recommended Badge Component End
+*/
+
+/*
+  Reviews Component Start
+*/
+.product-card-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--space-5);
+}
+
+.product-card-reviews p {
+  line-height: 1.625rem;
+}
+
+.product-card-reviews .stars {
+  display: flex;
+  margin-right: var(--space-5);
+  gap: 0.125rem;
+}
+
+.product-card-reviews .stars span {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+.product-card-reviews .stars span.light {
+  opacity: 0.5;
+}
+/*
+  Reviews Component End
+*/
+
+/*
+  Preview Thumbnail Component Start
+*/
+.preview-thumbnail {
+  display: flex;
+  margin: var(--space-5) auto;
+  padding: 0 var(--space-10);
+  gap: var(--space-5);
+}
+
+.preview-thumbnail img.preview {
+  max-height: 12em;
+  width: 100%;
+  object-fit: contain;
+}
+
+.preview-thumbnail img.brand-logo {
+  width: 75%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*
+  Preview Thumbnail Component End
+*/
+
+/*
+  Short Description Component Start
+*/
+.short-description {
+  margin-top: var(--space-5);
+}
+
+/*
+  Short Description Component End
+*/
+
+/*
+  Price Component Start
+*/
+.product-price-container {
+  margin-top: var(--space-5);
+}
+
+.product-price-container p.old-price {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-grey-200);
+}
+
+.product-price-container p.new-price {
+  margin-top: -0.25rem;
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+
+/*
+  Price Component End
+*/
+
+/*
+  Stock Limit Start
+*/
+.stock-limit-container {
+  margin-top: var(--space-10);
+}
+
+.stock-limit-container .progress-bar {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0.25em;
+  background-color: var(--color-grey-200);
+  border-radius: var(--border-radius-rounded);
+}
+
+.stock-limit-container .progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-green-300);
+  border-radius: var(--border-radius-rounded);
+}
+
+.stock-limit-container .progress-bar .progress.lowstock {
+  background-color: var(--color-destructive);
+}
+
+.stock-limit-container .stock-text {
+  margin-top: var(--space-5);
+  color: var(--color-grey-400);
+  font-size: 0.75em;
+}
+
+/*
+  Stock Limit End
+*/
+
+/*
+  Sale Points Component Start
+*/
+.sale-points-container {
+  margin-top: var(--space-10);
+}
+
+.sale-points-container .list-with-icons span.bullet-point {
+  width: 2rem;
+}
+
+.sale-points-container .list-with-icons li {
+  align-items: center;
+}
+
+/*
+  Sale Points Component End
+*/
